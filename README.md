@@ -10,7 +10,7 @@
             color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,58 +19,62 @@
             max-width: 500px;
             width: 100%;
             text-align: center;
-            padding-top: 40px;
+            padding-top: 20px;
+            box-sizing: border-box;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 5px;
             letter-spacing: -1px;
         }
         .subtitle {
             color: #7f7cad;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
             font-weight: 500;
         }
         .description {
             color: #a0a0a0;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
         }
         .feature-card {
             background-color: #121212;
             border: 1px solid #222;
             border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 25px;
+            padding: 15px;
+            margin-bottom: 20px;
             text-align: left;
+            box-sizing: border-box;
         }
         .feature-card img {
             width: 100%;
+            height: auto;
             border-radius: 8px;
-            margin-top: 15px;
+            margin-top: 12px;
+            display: block;
         }
         .feature-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #ffffff;
         }
         .feature-desc {
             color: #888;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-top: 5px;
             line-height: 1.4;
         }
         .cta-box {
-            margin: 40px 0;
+            margin: 30px 0;
             width: 100%;
         }
         .btn {
             background: linear-gradient(135deg, #7f7cad, #c39ea0);
             color: white;
             border: none;
-            padding: 15px 30px;
+            padding: 15px 20px;
             font-size: 1rem;
             font-weight: bold;
             border-radius: 8px;
@@ -79,13 +83,13 @@
             box-sizing: border-box;
         }
         .legal {
-            font-size: 0.75rem;
-            color: #444;
+            font-size: 0.7rem;
+            color: #555;
             text-align: justify;
-            margin-top: 40px;
+            margin-top: 35px;
             line-height: 1.4;
             border-top: 1px solid #222;
-            padding-top: 20px;
+            padding-top: 15px;
         }
     </style>
 </head>
@@ -100,24 +104,24 @@
             <button class="btn" onclick="alert('Beta registration opening soon!')">JOIN THE EXCLUSIVE BETA</button>
         </div>
 
-        <h2 style="margin-top: 40px; margin-bottom: 20px;">CORE FEATURES</h2>
+        <h2 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.4rem; letter-spacing: 1px;">CORE FEATURES</h2>
 
         <div class="feature-card">
             <div class="feature-title">Automated Wallet Execution</div>
             <div class="feature-desc">Connect safely via restricted APIs. The system handles protective buy/sell execution the second boundaries are crossed.</div>
-            <img src="card1.png.png" alt="Wallet Execution Interface">
+            <img src="IMG_7357.png" alt="Wallet Execution Interface">
         </div>
 
         <div class="feature-card">
             <div class="feature-title">Real-Time Signal Parsing</div>
             <div class="feature-desc">Automated keyword detection across authorized channels and market weather feeds.</div>
-            <img src="card2.png.png" alt="Signal Parsing Interface">
+            <img src="IMG_7358.png" alt="Signal Parsing Interface">
         </div>
 
         <div class="feature-card">
             <div class="feature-title">Global Currency Translation</div>
             <div class="feature-desc">Built-in CAD Lag Detector and multi-language localization parameters for borderless tracking.</div>
-            <img src="card3.png.png" alt="CAD Lag Detector Interface">
+            <img src="IMG_7359.png" alt="CAD Lag Detector Interface">
         </div>
         
         <div class="legal">
