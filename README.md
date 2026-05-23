@@ -129,7 +129,7 @@
         }
 
         [data-fs-success] {
-            display: none;
+            display: none !important;
             color: #c39ea0;
             font-weight: bold;
             font-size: 1.1rem;
