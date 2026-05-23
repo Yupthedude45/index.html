@@ -86,6 +86,48 @@
             opacity: 0.6;
             cursor: not-allowed;
         }
+        
+        /* Hype Tracking Styles */
+        .tracker-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #7f7cad;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .progress-bar-container {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 20px;
+            height: 14px;
+            width: 100%;
+            margin-bottom: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #7f7cad, #c39ea0);
+            width: 17%; /* This shows 17 spots filled */
+            height: 100%;
+            border-radius: 20px;
+        }
+        .tracker-stats {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        .reward-badge {
+            background-color: rgba(127, 124, 173, 0.1);
+            border: 1px dashed #7f7cad;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 0.85rem;
+            color: #c39ea0;
+            line-height: 1.4;
+            text-align: center;
+        }
+
         [data-fs-success] {
             display: none;
             color: #c39ea0;
@@ -149,6 +191,18 @@
         <p class="description">An automated, non-custodial risk execution shield built for investors who don't speak numbers. Experience a calm desk while the system monitors market weather, manages guardrails, and defends your capital.</p>
 
         <div class="form-container">
+            <div class="tracker-title">Founding Alpha Cohort</div>
+            <div class="progress-bar-container">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="tracker-stats"><strong>17</strong> / 100 Secure Positions Allocated</div>
+            
+            <div class="reward-badge">
+                🎁 <strong>Early Bird Allocation Matrix:</strong> The first 100 operators to secure a spot receive a custom data automation framework upon system initialization. Thank you for choosing logic over emotion to drive your capital infrastructure.
+            </div>
+            
+            <div style="margin-top: 20px;"></div>
+
             <div data-fs-success>🛡️ Beta Spot Secured! Welcome to the Guardrail.</div>
             <div data-fs-error></div>
 
@@ -180,8 +234,9 @@
         </div>
         
         <div class="legal">
-            <strong>⚖️ PHAEDRA AEGIS: REGULATORY, EXECUTION & PRIVACY COMPLIANCE MANDATE</strong><br><br>
+            <strong>⚖️ PRIVACY & REGULATORY COMPLIANCE MANDATE SUMMARY</strong><br><br>
             Phaedra Aegis is a proprietary automated algorithmic execution, risk-management, and analytical support interface. By initializing this application, providing an account email address, and selecting a local region, you explicitly authorize the platform to utilize these data points solely to personalize localized market weather alerts, track macro data infrastructure, and display native localized currency matrices. Users maintain the absolute right to account termination and may request the permanent deletion of their account metadata and registration email from our secure authentication records at any time. Phaedra Aegis is a non-custodial interface; it does not hold, store, or maintain direct access to your private cryptographic keys, seed phrases, or external exchange credentials. By actively connecting third-party digital wallets or exchange API keys to this interface, you grant explicit authorization for Phaedra Aegis to automatically deploy and execute buy and sell orders on your behalf, based entirely on the custom allocation parameters, risk guardrails, and system thresholds configured within your local user settings. This software functions strictly as a neutral, user-directed execution interface; it does not analyze individual investor suitability, offer tailored investment strategies, or provide personalized financial, legal, tax, or investment advisory services. You acknowledge that automated execution involves severe inherent risks, including network latency, API disconnects, market slippage, and sudden liquidity shocks; the developer assumes no financial or legal liability for execution delays, unexpected market movements, or losses resulting from automated trading logic. To deliver real-time localized tracking, this application utilizes user-authorized background parsing tools to scan specified inbound text message keywords and user-forwarded data strings—including clipped information from restricted networks such as Facebook groups. This background string-parsing is executed strictly in real-time on your local device to trigger automated alerts; no private conversational text or contextual social data is scraped, logged, or transmitted to external databases. All fiat banking connectivity, payment interactions, and subscription processing are routed through secure, end-to-end encrypted third-party financial gateways including Stripe and Plaid API architectures; Phaedra Aegis never reads, accesses, or retains raw banking credentials, account routing numbers, or credit card primary account details. All session tokens, parsed tracking preferences, and encrypted API configurations remain stored strictly within the localized, secure sandbox partition of the user’s host device. Past analytical performance or simulated trends do not guarantee future results. All automation parameters are operated independently and solely at the risk of the user.
+        </div>
     </div>
 
     <script>
