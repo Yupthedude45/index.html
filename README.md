@@ -108,7 +108,7 @@
         }
         .progress-fill {
             background: linear-gradient(90deg, #7f7cad, #c39ea0);
-            width: 17%; /* This shows 17 spots filled */
+            width: 17%;
             height: 100%;
             border-radius: 20px;
         }
@@ -128,23 +128,20 @@
             text-align: center;
         }
 
-        [data-fs-success] {
-            display: none !important;
+        /* Fixed Success State (No !important blocking script execution) */
+        .success-message {
+            display: none;
             color: #c39ea0;
             font-weight: bold;
             font-size: 1.1rem;
-            padding: 10px;
+            padding: 15px;
             border: 1px dashed #7f7cad;
             border-radius: 8px;
             background-color: #1a1a1a;
-            margin-bottom: 15px;
+            margin-top: 10px;
+            line-height: 1.4;
         }
-        [data-fs-error] {
-            color: #ff6b6b;
-            font-size: 0.85rem;
-            margin-top: 5px;
-            text-align: center;
-        }
+        
         .feature-card {
             background-color: #121212;
             border: 1px solid #222;
@@ -203,13 +200,14 @@
             
             <div style="margin-top: 20px;"></div>
 
-            <div data-fs-success>🛡️ Beta Spot Secured! Welcome to the Guardrail.</div>
-            <div data-fs-error></div>
+            <div id="success-banner" class="success-message">
+                🛡️ Beta Spot Secured!<br>
+                <span style="font-size: 0.9rem; color: #888; font-weight: normal;">Welcome to the Guardrail. Your spot has been locked into the automation network.</span>
+            </div>
 
             <form id="beta-form" class="form-group">
-                <input type="email" id="email" name="email" class="email-input" placeholder="Enter your email address" data-fs-field required>
-                <span data-fs-error="email"></span>
-                <button type="submit" class="btn" data-fs-submit-btn>SECURE MY BETA SPOT</button>
+                <input type="email" id="email" name="email" class="email-input" placeholder="Enter your email address" required>
+                <button type="submit" class="btn" id="submit-btn">SECURE MY BETA SPOT</button>
             </form>
         </div>
 
@@ -241,7 +239,16 @@
 
     <script>
       window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-      formspree('initForm', { formElement: '#beta-form', formId: 'mjgzrdnn' });
+      formspree('initForm', { 
+        formElement: '#beta-form', 
+        formId: 'mjgzrdnn',
+        onSuccess: function() {
+          // Hide form inputs completely
+          document.getElementById('beta-form').style.display = 'none';
+          // Unhide and display the success banner flawlessly
+          document.getElementById('success-banner').style.display = 'block';
+        }
+      });
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
