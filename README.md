@@ -318,7 +318,7 @@
             <div class="tracker-stats"><strong>7</strong> / 250 Secure Positions Allocated</div>
             
             <div class="reward-badge">
-                🎁 <strong>Early Bird Allocation Matrix:</strong> The first 250 operators to secure a spot receive a custom data automation framework upon system initialization. Thank you for choosing logic over emotion to drive your capital infrastructure.
+                🎁 <strong>Early Bird Allocation Matrix:</strong> The first 100 operators to secure a spot receive a custom data automation framework upon system initialization. Thank you for choosing logic over emotion to drive your capital infrastructure.
             </div>
             
             <div style="margin-top: 20px;"></div>
