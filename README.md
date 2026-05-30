@@ -1,9 +1,132 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phaedra Aegis | Risk Guardian</title>
+    <div class="phaedra-gate-container">
+    <div class="phaedra-alert-banner">
+        <span class="warning-icon">⚠️</span> 
+        <span class="banner-text">SYSTEM NOTICE: Phase 1 Node Allocation strictly capped at 250 users.</span>
+    </div>
+
+    <div class="phaedra-scarcity-box">
+        <h2 class="phaedra-title">FOUNDATIONAL ACCESS GATE</h2>
+        <p class="phaedra-subtitle">
+            Phaedra Aegis operates on strict infrastructure guardrails to ensure institutional-grade data accuracy and millisecond-level telemetry execution. 
+        </p>
+        
+        <div class="metrics-grid">
+            <div class="metric-card reserved">
+                <span class="metric-number">7</span>
+                <span class="metric-label">Nodes Provisioned</span>
+            </div>
+            <div class="metric-card remaining">
+                <span class="metric-number">243</span>
+                <span class="metric-label">Slots Remaining</span>
+            </div>
+        </div>
+
+        <p class="phaedra-footer-note">The next 18 slots release immediately on launch day. Once slot #250 is claimed, the registration protocol locks automatically.</p>
+    </div>
+</div>
+
+<style>
+    .phaedra-gate-container {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: #0d0e10;
+        color: #e4e6eb;
+        max-width: 550px;
+        margin: 20px auto;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #24262b;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .phaedra-alert-banner {
+        background: linear-gradient(90deg, #8a1818 0%, #b82323 100%);
+        color: #ffffff;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-bottom: 1px solid #b82323;
+    }
+
+    .phaedra-scarcity-box {
+        padding: 25px 30px;
+        text-align: center;
+    }
+
+    .phaedra-title {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        margin: 0 0 12px 0;
+    }
+
+    .phaedra-subtitle {
+        color: #9aa0a6;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0 0 25px 0;
+    }
+
+    .metrics-grid {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .metric-card {
+        flex: 1;
+        background: #16181c;
+        border: 1px solid #2a2d34;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric-card.reserved .metric-number {
+        color: #34a853; /* Safe, active green */
+    }
+
+    .metric-card.remaining .metric-number {
+        color: #f2994a; /* High-alert amber warning */
+    }
+
+    .metric-number {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+    .metric-label {
+        font-size: 0.75rem;
+        color: #70757a;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+
+    .phaedra-footer-note {
+        font-size: 0.8rem;
+        color: #70757a;
+        line-height: 1.4;
+        margin: 0;
+        font-style: italic;
+    }
+</style>
+
     <style>
         body {
             background-color: #0b0c10;
@@ -192,7 +315,7 @@
             <div class="progress-bar-container">
                 <div class="progress-fill"></div>
             </div>
-            <div class="tracker-stats"><strong>17</strong> / 100 Secure Positions Allocated</div>
+            <div class="tracker-stats"><strong>7</strong> / 100 Secure Positions Allocated</div>
             
             <div class="reward-badge">
                 🎁 <strong>Early Bird Allocation Matrix:</strong> The first 100 operators to secure a spot receive a custom data automation framework upon system initialization. Thank you for choosing logic over emotion to drive your capital infrastructure.
