@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phaedra Aegis | Risk Guardian</title>
+
+    <meta property="og:title" content="Phaedra Aegis | Risk Guardian">
+    <meta property="og:description" content="An automated, non-custodial risk execution shield built for investors. Experience a calm desk while the system monitors market weather.">
+    <meta property="og:url" content="[https://phaedraaegis.com](https://phaedraaegis.com)">
+    <meta property="og:type" content="website">
     
     <style>
         /* ==========================================================================
@@ -450,7 +455,6 @@
     </div>
 
     <script>
-        // Modal Window Presentation Control Logic
         function openLegalModal(event) {
             event.preventDefault(); 
             document.getElementById('footer-legal-modal').style.display = 'flex';
@@ -460,7 +464,6 @@
             document.getElementById('footer-legal-modal').style.display = 'none';
         }
 
-        // Window Boundary Event Handler (Closes layout if user clicks backdrop)
         window.onclick = function(event) {
             const modal = document.getElementById('footer-legal-modal');
             if (event.target == modal) {
@@ -468,7 +471,6 @@
             }
         }
 
-        // Formspree API Initializer
         window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
         formspree('initForm', { 
             formElement: '#beta-form', 
@@ -479,6 +481,6 @@
             }
         });
     </script>
-    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script src="[https://unpkg.com/@formspree/ajax@1](https://unpkg.com/@formspree/ajax@1)" defer></script>
 </body>
 </html>
