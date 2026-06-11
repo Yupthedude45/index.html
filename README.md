@@ -1,133 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phaedra Aegis | Risk Guardian</title>
-    <div class="phaedra-gate-container">
-    <div class="phaedra-alert-banner">
-        <span class="warning-icon">⚠️</span> 
-        <span class="banner-text">SYSTEM NOTICE: Phase 1 Node Allocation strictly capped at 250 users.</span>
-    </div>
-
-    <div class="phaedra-scarcity-box">
-        <h2 class="phaedra-title">FOUNDATIONAL ACCESS GATE</h2>
-        <p class="phaedra-subtitle">
-            Phaedra Aegis operates on strict infrastructure guardrails to ensure institutional-grade data accuracy and millisecond-level telemetry execution. 
-        </p>
-        
-        <div class="metrics-grid">
-            <div class="metric-card reserved">
-                <span class="metric-number">7</span>
-                <span class="metric-label">Nodes Provisioned</span>
-            </div>
-            <div class="metric-card remaining">
-                <span class="metric-number">243</span>
-                <span class="metric-label">Slots Remaining</span>
-            </div>
-        </div>
-
-        <p class="phaedra-footer-note">The next 18 slots release immediately on launch day. Once slot #250 is claimed, the registration protocol locks automatically.</p>
-    </div>
-</div>
-
-<style>
-    .phaedra-gate-container {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background: #0d0e10;
-        color: #e4e6eb;
-        max-width: 550px;
-        margin: 20px auto;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid #24262b;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
-
-    .phaedra-alert-banner {
-        background: linear-gradient(90deg, #8a1818 0%, #b82323 100%);
-        color: #ffffff;
-        padding: 10px 15px;
-        text-align: center;
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        border-bottom: 1px solid #b82323;
-    }
-
-    .phaedra-scarcity-box {
-        padding: 25px 30px;
-        text-align: center;
-    }
-
-    .phaedra-title {
-        color: #ffffff;
-        font-size: 1.3rem;
-        font-weight: 800;
-        letter-spacing: 1.5px;
-        margin: 0 0 12px 0;
-    }
-
-    .phaedra-subtitle {
-        color: #9aa0a6;
-        font-size: 0.9rem;
-        line-height: 1.5;
-        margin: 0 0 25px 0;
-    }
-
-    .metrics-grid {
-        display: flex;
-        gap: 15px;
-        margin-bottom: 25px;
-    }
-
-    .metric-card {
-        flex: 1;
-        background: #16181c;
-        border: 1px solid #2a2d34;
-        padding: 15px;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .metric-card.reserved .metric-number {
-        color: #34a853; /* Safe, active green */
-    }
-
-    .metric-card.remaining .metric-number {
-        color: #f2994a; /* High-alert amber warning */
-    }
-
-    .metric-number {
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 1;
-        margin-bottom: 5px;
-    }
-
-    .metric-label {
-        font-size: 0.75rem;
-        color: #70757a;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-weight: 600;
-    }
-
-    .phaedra-footer-note {
-        font-size: 0.8rem;
-        color: #70757a;
-        line-height: 1.4;
-        margin: 0;
-        font-style: italic;
-    }
-</style>
-
+    
     <style>
+        /* ==========================================================================
+           GLOBAL & LAYOUT STYLES
+           ========================================================================== */
         body {
             background-color: #0b0c10;
             color: #ffffff;
@@ -162,6 +43,98 @@
             margin-bottom: 30px;
             font-size: 0.95rem;
         }
+
+        /* ==========================================================================
+           FOUNDATIONAL ACCESS GATE (NODE ALLOCATION BOX)
+           ========================================================================== */
+        .phaedra-gate-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0d0e10;
+            color: #e4e6eb;
+            max-width: 550px;
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #24262b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+        .phaedra-alert-banner {
+            background: linear-gradient(90deg, #8a1818 0%, #b82323 100%);
+            color: #ffffff;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-bottom: 1px solid #b82323;
+        }
+        .phaedra-scarcity-box {
+            padding: 25px 30px;
+            text-align: center;
+        }
+        .phaedra-title {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin: 0 0 12px 0;
+        }
+        .phaedra-subtitle {
+            color: #9aa0a6;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0 0 25px 0;
+        }
+        .metrics-grid {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .metric-card {
+            flex: 1;
+            background: #16181c;
+            border: 1px solid #2a2d34;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .metric-card.reserved .metric-number {
+            color: #34a853;
+        }
+        .metric-card.remaining .metric-number {
+            color: #f2994a;
+        }
+        .metric-number {
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        .metric-label {
+            font-size: 0.75rem;
+            color: #70757a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        .phaedra-footer-note {
+            font-size: 0.8rem;
+            color: #70757a;
+            line-height: 1.4;
+            margin: 0;
+            font-style: italic;
+        }
+
+        /* ==========================================================================
+           FORM & TRACKER STYLES
+           ========================================================================== */
         .form-container {
             background-color: #121212;
             border: 1px solid #222;
@@ -209,8 +182,6 @@
             opacity: 0.6;
             cursor: not-allowed;
         }
-        
-        /* Hype Tracking Styles */
         .tracker-title {
             font-size: 0.85rem;
             text-transform: uppercase;
@@ -250,8 +221,6 @@
             line-height: 1.4;
             text-align: center;
         }
-
-        /* Fixed Success State (No !important blocking script execution) */
         .success-message {
             display: none;
             color: #c39ea0;
@@ -265,6 +234,9 @@
             line-height: 1.4;
         }
         
+        /* ==========================================================================
+           PRODUCT FEATURES
+           ========================================================================== */
         .feature-card {
             background-color: #121212;
             border: 1px solid #222;
@@ -273,6 +245,7 @@
             margin-bottom: 20px;
             text-align: left;
             box-sizing: border-box;
+            width: 100%;
         }
         .feature-card img {
             width: 100%;
@@ -292,14 +265,90 @@
             margin-top: 5px;
             line-height: 1.4;
         }
-        .legal {
-            font-size: 0.7rem;
-            color: #555;
-            text-align: justify;
-            margin-top: 35px;
-            line-height: 1.4;
+
+        /* ==========================================================================
+           COMPLIANCE FOOTER & MODAL WINDOW STYLES
+           ========================================================================== */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            width: 100%;
             border-top: 1px solid #222;
-            padding-top: 15px;
+            font-size: 0.8rem;
+            color: #555;
+            text-align: center;
+        }
+        footer a {
+            color: #7f7cad;
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        footer a:hover {
+            color: #c39ea0;
+            text-decoration: underline;
+        }
+        .footer-modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(10, 10, 12, 0.9);
+            display: none; /* Controlled cleanly via JS */
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .footer-modal-content {
+            background-color: #121212;
+            border: 1px solid #222;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .footer-modal-content h2 {
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+            padding-right: 20px;
+        }
+        .legal-text-scroll {
+            height: 300px;
+            overflow-y: auto;
+            background: #0b0c10;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            color: #a0a0a0;
+            border: 1px solid #222;
+        }
+        .legal-text-scroll p {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .close-modal-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #666;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s ease;
+            line-height: 1;
+        }
+        .close-modal-btn:hover {
+            color: #ffffff;
         }
     </style>
 </head>
@@ -309,6 +358,30 @@
         <div class="subtitle">Complex Volatility, Simplified.</div>
         
         <p class="description">An automated, non-custodial risk execution shield built for investors who don't speak numbers. Experience a calm desk while the system monitors market weather, manages guardrails, and defends your capital.</p>
+
+        <div class="phaedra-gate-container">
+            <div class="phaedra-alert-banner">
+                <span class="warning-icon">⚠️</span> 
+                <span class="banner-text">SYSTEM NOTICE: Phase 1 Node Allocation strictly capped at 250 users.</span>
+            </div>
+            <div class="phaedra-scarcity-box">
+                <h2 class="phaedra-title">FOUNDATIONAL ACCESS GATE</h2>
+                <p class="phaedra-subtitle">
+                    Phaedra Aegis operates on strict infrastructure guardrails to ensure institutional-grade data accuracy and millisecond-level telemetry execution. 
+                </p>
+                <div class="metrics-grid">
+                    <div class="metric-card reserved">
+                        <span class="metric-number">7</span>
+                        <span class="metric-label">Nodes Provisioned</span>
+                    </div>
+                    <div class="metric-card remaining">
+                        <span class="metric-number">243</span>
+                        <span class="metric-label">Slots Remaining</span>
+                    </div>
+                </div>
+                <p class="phaedra-footer-note">The next 18 slots release immediately on launch day. Once slot #250 is claimed, the registration protocol locks automatically.</p>
+            </div>
+        </div>
 
         <div class="form-container">
             <div class="tracker-title">Founding Alpha Cohort</div>
@@ -354,24 +427,57 @@
             <img src="IMG_7359.png" alt="CAD Lag Detector Interface">
         </div>
         
-        <div class="legal">
-            <strong>⚖️ PRIVACY & REGULATORY COMPLIANCE MANDATE SUMMARY</strong><br><br>
-            Phaedra Aegis is a proprietary automated algorithmic execution, risk-management, and analytical support interface. By initializing this application, providing an account email address, and selecting a local region, you explicitly authorize the platform to utilize these data points solely to personalize localized market weather alerts, track macro data infrastructure, and display native localized currency matrices. Users maintain the absolute right to account termination and may request the permanent deletion of their account metadata and registration email from our secure authentication records at any time. Phaedra Aegis is a non-custodial interface; it does not hold, store, or maintain direct access to your private cryptographic keys, seed phrases, or external exchange credentials. By actively connecting third-party digital wallets or exchange API keys to this interface, you grant explicit authorization for Phaedra Aegis to automatically deploy and execute buy and sell orders on your behalf, based entirely on the custom allocation parameters, risk guardrails, and system thresholds configured within your local user settings. This software functions strictly as a neutral, user-directed execution interface; it does not analyze individual investor suitability, offer tailored investment strategies, or provide personalized financial, legal, tax, or investment advisory services. You acknowledge that automated execution involves severe inherent risks, including network latency, API disconnects, market slippage, and sudden liquidity shocks; the developer assumes no financial or legal liability for execution delays, unexpected market movements, or losses resulting from automated trading logic. To deliver real-time localized tracking, this application utilizes user-authorized background parsing tools to scan specified inbound text message keywords and user-forwarded data strings—including clipped information from restricted networks such as Facebook groups. This background string-parsing is executed strictly in real-time on your local device to trigger automated alerts; no private conversational text or contextual social data is scraped, logged, or transmitted to external databases. All fiat banking connectivity, payment interactions, and subscription processing are routed through secure, end-to-end encrypted third-party financial gateways including Stripe and Plaid API architectures; Phaedra Aegis never reads, accesses, or retains raw banking credentials, account routing numbers, or credit card primary account details. All session tokens, parsed tracking preferences, and encrypted API configurations remain stored strictly within the localized, secure sandbox partition of the user’s host device. Past analytical performance or simulated trends do not guarantee future results. All automation parameters are operated independently and solely at the risk of the user.
+        <footer>
+            <p>&copy; 2026 Phaedra Aegis. All rights reserved. 
+                <a href="#" id="legal-link" onclick="openLegalModal(event)">Legal & Risk Disclosure</a>
+            </p>
+        </footer>
+
+        <div id="footer-legal-modal" class="footer-modal">
+            <div class="footer-modal-content">
+                <span class="close-modal-btn" onclick="closeLegalModal()">&times;</span>
+                <h2>Phaedra Aegis Legal Disclosure & Interface Terms</h2>
+                <div class="legal-text-scroll">
+                    <p><strong>Phaedra Aegis Legal Disclosure & Interface Terms</strong></p>
+                    <p>Phaedra Aegis is a proprietary, non-custodial automated algorithmic risk-management routing and analytical support interface. This software functions strictly as a neutral, user-directed technical utility; it does not analyze individual investor suitability, offer tailored investment strategies, or provide personalized financial, legal, tax, or investment advisory services. No securities regulatory authority or regulator in Canada or any other jurisdiction has evaluated, reviewed, or endorsed this software, its underlying technical logic, or its analytical tracking data.</p>
+                    <p>By initializing this application, providing an account email address, and selecting a local region, you explicitly authorize the platform to utilize these data points solely to personalize localized market metrics and display native currency matrices. Users maintain the absolute right to account termination and may request the permanent deletion of their account metadata and registration email from our secure authentication records at any time.</p>
+                    <p>Phaedra Aegis is a strictly non-custodial interface; it does not hold, store, custody, or maintain direct access to your private cryptographic keys, seed phrases, or external exchange-held capital. By actively linking independent third-party digital wallets or private exchange API keys to your local instance of this interface, you acknowledge that Phaedra Aegis acts purely as a technical conduit to transmit user-configured data parameters. You grant explicit authorization for your local device parameters to pass pre-set buy and sell execution instructions directly to your designated third-party exchange, based entirely on the custom allocation parameters, risk guardrails, and system thresholds configured solely within your local user settings.</p>
+                    <p>You acknowledge that automated order transmission involves severe inherent market and technical risks, including but not limited to network latency, API disconnects, third-party exchange outages, market slippage, and sudden liquidity shocks. The developer assumes no financial or legal liability for execution delays, unexpected market movements, programmatic execution variations, or financial losses resulting directly or indirectly from your automated trading parameters. All automation parameters are operated independently and solely at the risk of the user. Past analytical performance or simulated trends do not guarantee future live market results.</p>
+                    <p>To deliver real-time data tracking, this application utilizes user-authorized, client-side parsing tools to scan specified, user-forwarded text strings and clipboard data imports. This background parsing is executed strictly in real-time on your local device memory to trigger automated user-alerts; no private conversational text, external scraping sequences, or contextual social data is logged, retained, or transmitted to external databases. All fiat transactional interactions and subscription processing are routed through secure, end-to-end encrypted third-party financial gateways including Stripe and Plaid API architectures; Phaedra Aegis never reads, accesses, or retains raw banking credentials, account routing numbers, or credit card primary account details. All active session tokens, parsed tracking preferences, and encrypted API configurations remain stored strictly within the localized, secure sandbox partition of the user’s host device.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-      formspree('initForm', { 
-        formElement: '#beta-form', 
-        formId: 'mjgzrdnn',
-        onSuccess: function() {
-          // Hide form inputs completely
-          document.getElementById('beta-form').style.display = 'none';
-          // Unhide and display the success banner flawlessly
-          document.getElementById('success-banner').style.display = 'block';
+        // Modal Window Presentation Control Logic
+        function openLegalModal(event) {
+            event.preventDefault(); 
+            document.getElementById('footer-legal-modal').style.display = 'flex';
         }
-      });
+
+        function closeLegalModal() {
+            document.getElementById('footer-legal-modal').style.display = 'none';
+        }
+
+        // Window Boundary Event Handler (Closes layout if user clicks backdrop)
+        window.onclick = function(event) {
+            const modal = document.getElementById('footer-legal-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Formspree API Initializer
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { 
+            formElement: '#beta-form', 
+            formId: 'mjgzrdnn',
+            onSuccess: function() {
+                document.getElementById('beta-form').style.display = 'none';
+                document.getElementById('success-banner').style.display = 'block';
+            }
+        });
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
